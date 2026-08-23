@@ -1,0 +1,13 @@
+{
+  "name": "en16931-sample-validator",
+  "version": "1.0.0",
+  "description": "Sample EN 16931 e-invoices (ZUGFeRD / XRechnung / Factur-X) plus a dependency-free CLI structural validator. By TaxLayer.",
+  "keywords": ["en16931","zugferd","xrechnung","factur-x","e-invoice","e-rechnung","ubl","cii","kosit","validator","peppol"],
+  "license": "MIT",
+  "homepage": "https://taxlayer.de",
+  "bin": { "en16931-validate": "validate.js" },
+  "scripts": {
+    "validate:ubl": "node validate.js samples/xrechnung-3.0-ubl.xml",
+    "validate:cii": "node validate.js samples/zugferd-2.1-en16931-cii.xml"
+  }
+}
